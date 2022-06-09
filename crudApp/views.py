@@ -6,6 +6,10 @@ from .models import ProdectDetails
 def addproduct(request):
     return render(request,'addproduct.html')
 
+def load_demo(request):
+    return render(request,'demo.html')
+
+
 def add_product_details(request):
     if request.method=='POST':
         pname=request.POST['product_name']
